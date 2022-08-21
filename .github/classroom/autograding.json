@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Plagiat",
+      "setup": "",
+      "run": "curl -X 'POST'  'https://codeplagiarismapi.azurewebsites.net/api/github'   -H 'accept: text/plain' -H 'Content-Type: application/json' -d '{   \"organization\": \"Mospolytech-IIT\",   \"repositoryPrefix\": \"lab-3\",   \"reportFilterRegex\": \"stud3-anna\",   \"fileRegex\": \".*.cpp\",   \"language\": \"C\",   \"templateRepository\": \"TeymurZeynally/GHC-Template-CPP-Plagiarism\" }'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
